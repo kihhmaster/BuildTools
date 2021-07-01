@@ -1,0 +1,12 @@
+@import "input.scss";
+
+$default-font: "roboto-example", sans-serif;
+$var3: #fce9be;
+$var4: #b38d6b;
+$var5: #5b7164;
+
+body {
+	font: $default-font;
+	color: $var4;
+	background-color: $var3;
+}

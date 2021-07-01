@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- <script src="./src/index.js" type="module"></script> -->
+</head>
+<body>
+
+<section class="sectionContent" style="display: flex; justify-content: center; flex-direction: column; ">
+	<div>
+		<button id="butTimer" style="width: 150px; height: 40px; margin: 30px;">Timer</button>
+		<button id="butData" style="width: 150px; height: 40px; margin: 30px;">Data</button>
+	</div>
+	<div class="mainContent" style="display: flex; justify-content: center; "></div>
+</section>
+<section id="sectionData">
+	<h1>Калькулятор дат:</h1>
+	<form id="form-date">
+		<label for="date1">
+			<b>Первая дата</b>
+			<input type="date" name="date1" id="date1">
+		</label>
+		<label for="date2">
+			<b>Вторая дата</b>
+			<input type="date" name="date2" id="date2">
+		</label>
+		<button type='submit'>Расчитать промежуток</button>
+	</form>
+	<p class="massege"></p>
+</section>
+
+<section id="sectionTimer" style="display: none; flex-direction: column;" >
+	
+	<h2>Таймер</h2>
+	<form>
+		<label for="startTime">Выберите время: </label>
+		<input type="time" id="startTime" name="appt-time" step="2">
+		<p>
+			Вы утановили <code>таймер</code> на 
+			<code>"<span id="value">n/a</span>"</code>.
+		</p>
+	</form>
+	<button id="button" style="width: 100px; height: 40px;">Запустить</button>
+	<div id="timer"></div>
+	<div id="timerFineshed"></div>
+
+</section>
+
+</body>
+</html>
